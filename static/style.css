@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.head1 {
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+  font-family: Comic Sans MS;
+  text-shadow: 2px 2px 5px red;
+  margin-top: -50px;
+  /* position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s; */
+}
+
+.leftcolumn {
+  float: left;
+  width: 100%;
+}
+
+.card {
+  margin-top: 20px;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+#timeLine {
+  color: blue;
+  margin-top: -15px;
+}

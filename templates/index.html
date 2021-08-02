@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+    <title>Horseman's blog</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+
+
+</head>
+
+<body>
+    {% for titles in title%}
+    <div class="head1" id="myHead">
+        <h1>{{titles.name}}</h1>
+    </div>
+    {% endfor%}
+    <div class="row" id="box">
+        <div class="leftcolumn">
+            {% for post in posts reversed%}
+            <div class="card" style="margin-top: 20px;padding: 15px 15px ;">
+                <a style="text-decoration: none;color: black;" href="/post/{{post.id}}">
+                    <h1>{{post.title}}</h1>
+                    <h5 id="timeLine">{{post.time}}</h5>
+                    <p>{{post.body|truncatewords:15}}</p>
+                </a>
+            </div>
+            {% endfor%}
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

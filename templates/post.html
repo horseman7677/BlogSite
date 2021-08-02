@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+  <title>Horseman's blog</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}" />
+  
+
+</head>
+
+<body>
+  <div class="head1">
+    <h1>HORSEMAN'S BLOG</h1>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <a style="text-decoration: none;color: black;" href="#">
+          <h1>{{posts.title}}</h1>
+          <h5 id="timeLine">{{posts.time}}</h5>
+          <p>{{posts.body}}</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
